@@ -16,12 +16,11 @@ body {
     max-width: 360px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    flex-direction: column;   
+    align-items: center; 
     height: 100vh;
 }
 
-.card {
+.card-main {
     width: 100%;
     background-color: hsl(213, 19%, 18%);
     padding: 35px;
@@ -43,17 +42,17 @@ img.thank-you {
     padding: 20px 0;
 }
 
-.card h2{
+.card-main h2{
     color: #fff;
     padding: 20px 0 10px 0;
 }
 
-.card span{
+.card-main span{
     color: hsl(217, 12%, 63%);
-    font-size: 0.8rem;
+    font-size: 0.8rem;;
 }
 
-.card ul{
+.card-main ul{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -61,7 +60,7 @@ img.thank-you {
     padding: 25px 0;
 }
 
-.card ul li{
+.card-main ul li button{
     width: 45px;
     height: 45px;
     padding: 10px;
@@ -69,6 +68,20 @@ img.thank-you {
     text-align: center;
     color: hsl(217, 12%, 63%);
     background-color: hsl(213, 17%, 23%);
+    border: none;
+    transition: 0.3s;
+}
+
+.card-main ul li button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: #fff;
+    border: none;
+}
+
+.card-main ul li button:focus{
+    color: hsl(216, 12%, 8%);
+    background-color: hsl(217, 12%, 63%);
+    border: none;
 }
 
 .submit{
@@ -81,10 +94,13 @@ img.thank-you {
     font-size: 0.9rem;
     letter-spacing: 4px;
     font-weight: 700;
+    transition: 0.3s;
+    text-transform: uppercase;
 }
 
-.submit button:hover{
-    background-color: hsl(25, 96%, 44%);
+.submit:hover{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
 }
 
 .selected{
@@ -95,6 +111,81 @@ img.thank-you {
     border-radius: 38px;
     padding: 8px 0;
     font-size: 0.9rem;
+}
+
+
+.card-thanks {
+    width: 100%;
+    background-color: hsl(213, 19%, 18%);
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card-thanks h2{
+    color: #fff;
+    padding: 20px 0 10px 0;
+}
+
+.card-thanks span{
+    color: hsl(217, 12%, 63%);
+    font-size: 0.8rem;;
+}
+
+.card-thanks ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 25px 0;
+}
+
+.card-thanks ul li button{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(213, 17%, 23%);
+    border: none;
+    transition: 0.3s;
+}
+
+.card-thanks ul li button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: #fff;
+    border: none;
+}
+
+.card-thanks ul li button:focus{
+    color: hsl(216, 12%, 8%);
+    background-color: hsl(217, 12%, 63%);
+    border: none;
+}
+
+.rate-again{
+    width: 100%;
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    border: none;
+    border-radius: 38px;
+    margin-top: 2rem;
+    padding: 15px 0 12px;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.rate-again:hover{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+    display: none;
 }
 
 /*
